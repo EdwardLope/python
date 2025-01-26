@@ -31,7 +31,7 @@ listaRutas = []
 opcion = 0
 
 
-def calcular_costo_ruta(km, rutaRural):
+def calcularCostoRuta(km, rutaRural):
     if rutaRural:
         return costoViajeRural
     elif km < 10:
@@ -62,16 +62,16 @@ while opcion != 5:
         
     elif opcion == 2:
         print("Registrando una ruta")
-        cantidad_km = int(input("Digita la cantidad de km: "))
+        cantidadKm = int(input("Digita la cantidad de km: "))
         ciudad = input("Digita la ciudad: ")
         rutaRural = input("¿Es una ruta rural? (sí/no): ").strip().lower() == "sí"
         
-        costo_total = calcular_costo_ruta(cantidad_km, rutaRural)
+        costoTotal = calcularCostoRuta(cantidadKm, rutaRural)
         
         ruta = {
             "ciudad": ciudad,
-            "km": cantidad_km,
-            "costo_total": costo_total,
+            "km": cantidadKm,
+            "costo_total": costoTotal,
             "rural": rutaRural
         }
         
@@ -90,7 +90,7 @@ while opcion != 5:
             print(f"Ciudad: {ruta['ciudad']}, Kilómetros: {ruta['km']}, Tipo: {tipo_ruta}, Costo total: {ruta['costo_total']}")
     
     elif opcion == 5:
-        print("¡Hasta luego!")
+        print("adios")
         break
     
     else:
