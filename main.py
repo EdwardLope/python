@@ -71,7 +71,7 @@ while opcion != 5:
         ruta = {
             "ciudad": ciudad,
             "km": cantidadKm,
-            "costo_total": costoTotal,
+            "costoTotal": costoTotal,
             "rural": rutaRural
         }
         
@@ -86,8 +86,8 @@ while opcion != 5:
     elif opcion == 4:
         print("Lista de rutas:")
         for ruta in listaRutas:
-            tipo_ruta = "rural" if ruta['rural'] else "urbana"
-            print(f"Ciudad: {ruta['ciudad']}, Kilómetros: {ruta['km']}, Tipo: {tipo_ruta}, Costo total: {ruta['costo_total']}")
+            tipoRuta = "rural" if ruta['rural'] else "urbana"
+            print(f"Ciudad: {ruta['ciudad']}, Kilómetros: {ruta['km']}, Tipo: {tipoRuta}, Costo total: {ruta['costoTotal']}")
     
     elif opcion == 5:
         print("adios")
