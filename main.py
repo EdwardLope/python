@@ -2,12 +2,12 @@
 istrubuidores ECOMODA necesita calcular
 el precio de sus rutas logicas
 cada ruta tiene clasificacion
--urbnas (cortas,medianas,grandes)
--rurales
-1. si la ruta es menor a 10km-->corta
-2. si la ruta es mayor a 10km y menor a 25km -->media
+urbnas (cortas,medianas,grandes)
+rurales
+1. si la ruta es menor a 10km --> corta
+2. si la ruta es mayor a 10km y menor a 25km --> media
 3. si la ruta es mator a 25 km se considera larga 
-4. las rutas rurales tiene el mismo costo-2500000
+4. las rutas rurales tiene el mismo costo 2500000
 
 requisitos:
 Haga un listado DINAMICO de clientes
